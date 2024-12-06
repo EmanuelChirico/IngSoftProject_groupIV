@@ -5,7 +5,7 @@
  */
 
 package it.diem.unisa.ingsoft.gruppoiv.rubrica;
-//prova commento
+
 import java.util.List;
 
 public class Rubrica {
