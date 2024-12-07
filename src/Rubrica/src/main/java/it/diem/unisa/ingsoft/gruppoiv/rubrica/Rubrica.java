@@ -26,4 +26,10 @@ public class Rubrica {
     
     public void salvaModifiche(){
     }
+    public boolean numeroDuplicato(){
+        return true;
+    }
+    public Contatto clona(){
+        return null;
+    }
 }
