@@ -5,9 +5,9 @@ package it.diem.unisa.ingsoft.gruppoiv.rubrica;
  * @brief La classe InterfacciaUtente gestisce un'interfaccia grafica per interagire con l'utente.
  * 
  * Questa classe include le seguenti funzionalità:
- * - Visualizzazione della rubrica
- * - Ricerca di contatti
- * - Interazione con l'utente tramite bottoni
+ * - visualizzazione della rubrica
+ * - ricerca di contatti
+ * - interazione con l'utente tramite bottoni
  * 
  * @author Gruppo IV
  */

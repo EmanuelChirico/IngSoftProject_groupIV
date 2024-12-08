@@ -31,7 +31,7 @@ public class Rubrica {
      * 
      * @param[in] c Contatto da aggiungere.
      * @see confermaModifiche()
-     * @see numeroDuplicato
+     * @see numeroDuplicato()
      */
     public void aggiungiContatto(Contatto c) {
     }
@@ -107,7 +107,7 @@ public class Rubrica {
      * @invariant Il contatto passato come parametro non viene modificato.
      * 
      * @param[in] c Contatto da clonare.
-     * @return Viene restituito il clone del contatto.
+     * @return Il clone del contatto.
      */
     public Contatto clona(Contatto c){
         return null;
