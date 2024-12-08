@@ -1,16 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package it.diem.unisa.ingsoft.gruppoiv.rubrica;
 
 import java.util.List;
 
 /**
- * La classe Contatto rappresenta un contatto con informazioni 
- * personali come nome, cognome, numeri di telefono ed email.
+ * @file Contatto.java
+ * @brief La classe Contatto rappresenta un contatto con informazioni personali.
+ * 
+ * Questa classe include le seguenti informazioni:
+ * -nome
+ * -cognome
+ * -numeri di telefono 
+ * -email
+ * 
+ * @author Gruppo IV 
  */
 public class Contatto {
 
@@ -20,7 +22,10 @@ public class Contatto {
     private List<String> email;
 
     /**
-     * Restituisce il nome del contatto.
+     * @brief Il metodo getNome() restituisce il nome del contatto.
+     * 
+     * @post restituisce il valore corrente dell'attributo associato.
+     * @invariant lo stato dell'oggetto non deve essere modificato.
      * 
      * @return il nome del contatto.
      */
@@ -29,7 +34,10 @@ public class Contatto {
     }
 
     /**
-     * Restituisce il cognome del contatto.
+     * @brief il metodo getCognome() restituisce il cognome del contatto.
+     * 
+     * @post restituisce il valore corrente dell'attributo associato.
+     * @invariant lo stato dell'oggetto non deve essere modificato.
      * 
      * @return il cognome del contatto.
      */
@@ -38,7 +46,10 @@ public class Contatto {
     }
 
     /**
-     * Restituisce la lista dei numeri di telefono del contatto.
+     * @brief il metodo getNumTel() restituisce la lista dei numeri di telefono del contatto.
+     * 
+     * @post restituisce il valore corrente dell'attributo associato.
+     * @invariant lo stato dell'oggetto non deve essere modificato.
      * 
      * @return la lista dei numeri di telefono.
      */
@@ -47,7 +58,10 @@ public class Contatto {
     }
 
     /**
-     * Restituisce la lista delle email del contatto.
+     * @brief il metodo getEmail() restituisce la lista delle email del contatto.
+     * 
+     * @post restituisce il valore corrente dell'attributo associato.
+     * @invariant lo stato dell'oggetto non deve essere modificato.
      * 
      * @return la lista delle email.
      */
@@ -56,43 +70,55 @@ public class Contatto {
     }
 
     /**
-     * Imposta il nome del contatto.
+     * @brief il metodo setNome() imposta il nome del contatto.
      * 
-     * @param nome il nome del contatto.
+     * @pre il valore passato come parametro è valido.
+     * @post l'attributo deve essere aggiornato con il parametro passato.
+     * 
+     * @param[in] nome il nome del contatto.
      */
     public void setNome(String nome) {
         this.Nome = nome;
     }
 
     /**
-     * Imposta il cognome del contatto.
+     * @brief il metodo setCognome() imposta il cognome del contatto.
      * 
-     * @param cognome il cognome del contatto.
+     * @pre il valore passato come parametro è valido.
+     * @post l'attributo deve essere aggiornato con il parametro passato.
+     * 
+     * @param[in] cognome il cognome del contatto.
      */
     public void setCognome(String cognome) {
         this.Cognome = cognome;
     }
 
     /**
-     * Imposta la lista dei numeri di telefono del contatto.
+     * @brief il metodo setNumTel() imposta la lista dei numeri di telefono del contatto.
      * 
-     * @param numTel la lista dei numeri di telefono.
+     * @pre il valore passato come parametro è valido.
+     * @post l'attributo deve essere aggiornato con il parametro passato.
+     * 
+     * @param[in] numTel la lista dei numeri di telefono.
      */
     public void setNumTel(List<String> numTel) {
         this.numTel = numTel;
     }
 
     /**
-     * Imposta la lista delle email del contatto.
+     * @brief il metodo setEmail() imposta la lista delle email del contatto.
      * 
-     * @param email la lista delle email.
+     * @pre il valore passato come parametro è valido.
+     * @post l'attributo deve essere aggiornato con il parametro passato.
+     * 
+     * @param[in] email la lista delle email.
      */
     public void setEmail(List<String> email) {
         this.email = email;
     }
 
     /**
-     * Restituisce una rappresentazione del contatto come stringa.
+     * @brief il metodo toString() restituisce una rappresentazione del contatto come stringa.
      * 
      * @return una stringa che rappresenta il contatto.
      */
